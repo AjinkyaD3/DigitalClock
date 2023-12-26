@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .wrapper {
+    height: 100px;
+    width: 360px;
+    position: relative;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: animate 1.5s linear infinite;
+  }
+  
+  .display {
+    position: relative;
+    height: 85px;
+    width: 100%;
+    background: #1b1b1b;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+  
+  @keyframes animate {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
